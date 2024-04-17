@@ -1,0 +1,56 @@
+.searchForm {
+    display: flex;
+    align-items: center; /* This ensures that the form and the button are vertically aligned */
+    gap: 10px; /* Adds some space between the input and the button */
+}
+
+.searchForm form {
+    display: flex; /* Makes the form a flex container */
+    align-items: center; /* Aligns the input and button vertically */
+    gap: 10px; /* Adds some space between the input and the button */
+    width: 100%; /* Ensures the form takes up the full width of its parent */
+}
+
+.searchForm button {
+    background-color: #588157;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.searchForm button:hover {
+    background-color: #45a049;
+}
+
+.searchForm button:focus {
+    border-color: #4caf50;
+}
+
+.searchForm input[type="search"] {
+    background-color: #e9f5db;
+    color: white;
+    padding: 10px 50px; 
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    flex-grow: 1; /* Allows the input to take up the remaining space */
+}
+
+.searchForm input[type="search"]:hover {
+    background-color: #dde5b6;
+}
+
+.searchForm label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, #588157, #a3b18a);
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}

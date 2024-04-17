@@ -1,0 +1,6 @@
+.posts {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0;
+  list-style-type: none; /* Remove bullet points from the list */
+}

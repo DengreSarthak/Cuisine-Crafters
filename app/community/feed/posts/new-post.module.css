@@ -1,0 +1,85 @@
+.feedForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%; /* Adjust the width as needed */
+	max-width: 600px; /* Maximum width for larger screens */
+	padding: 20px;
+	background-color: #ffffff; /* White background for the form */
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: 0 4px 6px rgba(217, 216, 220, 0.1); /* Subtle shadow for depth */
+    margin: auto;
+}
+
+.inputContainer {
+	margin-bottom: 20px; /* Space between the input and the next element */
+    width: 100%;
+}
+
+.inputField {
+    width: 100%; /* Make the input field stretch to the full width of its parent */
+    padding: 10px;
+    font-size: 16px;
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid #ccc; /* Add a bottom border */
+    outline: none; /* Remove default outline */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+
+.inputField:focus {
+	border-bottom-color: aquamarine;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Evenly space the buttons */
+    width: 100%; /* Ensure the container takes up the full width */
+}
+
+.addPhotoButton, .feelingActivityButton {
+    padding: 10px 20px; /* Add padding for better clickable area */
+    font-size: 16px; /* Set font size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin: auto;
+}
+
+.addPhotoButton {
+    background-color: #ffffff;
+    color: #3a9866; /* White text */
+}
+
+.addPhotoButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.feelingActivityButton {
+    background-color: #ffffff;
+    color: #6dc684; /* White text */
+}
+
+.feelingActivityButton:hover {
+    background-color: #2791e3; /* Darker gray on hover */
+}
+
+.postContainer {
+    width: 100%;
+}
+
+.postButton {
+    width: 95%;
+    padding: 10px 20px; /* Add padding for better clickable area */
+    font-size: 16px; /* Set font size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin: 1rem 2rem 0rem 1rem;
+}
+
+.postButton:hover {
+    background-color: #2791e3; /* Darker gray on hover */
+}
