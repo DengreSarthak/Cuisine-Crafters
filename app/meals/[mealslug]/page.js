@@ -3,24 +3,22 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import classes from "./page.module.css";
 
-export async function generateMetadata({params}) {
+export function generateMetadata({ params }) {
 	const meal = getMeal(params.mealslug);
-
-	if(!meal){
-		notFound();
-	}
-	
-	return {
-		title : meal.title,
-		description: meal.summary,
-	};
-}
-
-export async function generateStaticParams({params}) {
-	
-	const mealSlug = params.mealslug;
   
-	return <p>Hello</p>
+	if (!meal) {
+	  return notFound();
+	}
+  
+	return {
+	  title: meal.title,
+	  description: meal.summary,
+	};
+  }
+  
+  export function generateStaticParams() {
+	// Example: Returning an array of objects for static generation
+	return [{ mealslug: 'example-slug' }];
   }
 
 export default function MealDetailsPage({ params }) {
