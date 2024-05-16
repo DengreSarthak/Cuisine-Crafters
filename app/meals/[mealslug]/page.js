@@ -20,9 +20,7 @@ export async function generateStaticParams({params}) {
 	
 	const mealSlug = params.mealslug;
   
-	return meals.map(meal => ({
-	  mealslug: mealSlug, 
-	}));
+	return <p>Hello</p>
   }
 
 export default function MealDetailsPage({ params }) {
