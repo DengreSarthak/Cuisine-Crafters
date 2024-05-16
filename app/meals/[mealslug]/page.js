@@ -16,6 +16,16 @@ export async function generateMetadata({params}) {
 	};
 }
 
+export async function generateStaticParams() {
+	// Example: Assuming you have a way to fetch all meals slugs
+	const meals = await getMealsSlugs(); // You need to implement this function based on your data source
+  
+	// Return an array of objects where each object represents a parameter value
+	return meals.map(meal => ({
+	  mealslug: meal.slug, // Assuming each meal has a unique slug property
+	}));
+  }
+
 export default function MealDetailsPage({ params }) {
 	const meal = getMeal(params.mealslug);
 
