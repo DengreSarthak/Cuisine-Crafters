@@ -16,7 +16,7 @@ export async function generateMetadata({params}) {
 	};
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams({params}) {
 	
 	const mealSlug = params.mealslug;
   
