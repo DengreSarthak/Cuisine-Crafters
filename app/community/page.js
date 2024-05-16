@@ -7,6 +7,8 @@ import classes from "./page.module.css";
 import GetUsername from "./../../helpers/getUsername";
 import Link from "next/link";
 
+
+
 export default function CommunityPage() {
 	return (
 		<>
